@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXML2.java to edit this template
- */
 package cronometro;
 
 import java.net.URL;
@@ -14,10 +10,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
-/**
- *
- * @author Lucas Cavalcante
- */
 public class FXMLDocumentController implements Initializable {
     // Elementos de tela
     @FXML private Button btnIniciar;
@@ -74,7 +66,6 @@ public class FXMLDocumentController implements Initializable {
             btnParar.setText("Zerar"); // Tansforma o botão parar em botão zerar
             cronometro.cancel();
             cronometro = null;
-            //tarefa = null;
         }else if(btnParar.getText().equals("Zerar")){
             btnParar.setText("Parar"); // Tansforma o notão zerar em botão parar
             txtSeg.setText("00");
@@ -83,7 +74,6 @@ public class FXMLDocumentController implements Initializable {
             segundo = 0;
             minuto = 0;
             cronometro = null;
-            //tarefa = null;
         }
     }// Fim botão parar / zerar
     
