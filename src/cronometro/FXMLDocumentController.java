@@ -67,7 +67,7 @@ public class FXMLDocumentController implements Initializable {
             cronometro.cancel();
             cronometro = null;
         }else if(btnParar.getText().equals("Zerar")){
-            btnParar.setText("Parar"); // Tansforma o notão zerar em botão parar
+            btnParar.setText("Parar"); // Tansforma o botão zerar em botão parar
             txtSeg.setText("00");
             txtMin.setText("00");
             btnParar.setDisable(true);
